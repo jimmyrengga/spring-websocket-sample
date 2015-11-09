@@ -7,7 +7,7 @@ angular.module('websocketClientApp')
 
             $scope.connect = function () {
                 console.log('username: ' + $scope.username);
-                var socket = new SockJS('http://localhost:8080/sample');
+                var socket = new SockJS('/sample');
                 stompClient = Stomp.over(socket);
                 stompClient.connect($scope.username, 'test', function () {
                     console.log('Connected: ' + $scope.username);
