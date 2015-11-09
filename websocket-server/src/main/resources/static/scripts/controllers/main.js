@@ -16,7 +16,7 @@ angular.module('websocketClientApp')
                         $scope.showMessage(msg.body);
                     });
                     
-                    stompClient.subscribe('/user/update', function (msg) {
+                    stompClient.subscribe('/user/' + $scope.username +'/update', function (msg) {
                         $scope.showPrivateMessage(msg.body);
                     });
 

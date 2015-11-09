@@ -26,6 +26,6 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
-        registry.enableSimpleBroker("/info", "/update");
+        registry.enableSimpleBroker("/info", "/user");
     }
 }
