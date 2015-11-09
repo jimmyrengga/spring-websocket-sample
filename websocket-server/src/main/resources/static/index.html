@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/angular-notify/dist/angular-notify.min.css">
+    </head>
+    <body ng-app="websocketClientApp">
+        <div class="header">
+            <div class="navbar navbar-default" role="navigation" style="background-color: #008080;">
+                <div class="container" >
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#/" style="color: whitesmoke;"><strong>Websocket Client</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div ng-view=""></div>
+        </div>
+
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/sockjs/sockjs.js"></script>
+        <script src="bower_components/stomp-websocket/lib/stomp.js"></script>
+        <script src="bower_components/angular-notify/dist/angular-notify.min.js"></script>
+        
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/admin.js"></script>
+        
+    </body>
+</html>

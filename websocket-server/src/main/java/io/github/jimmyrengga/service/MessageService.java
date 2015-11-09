@@ -20,7 +20,7 @@ public class MessageService {
     @Autowired 
     SimpMessagingTemplate template;
     
-    @Scheduled(fixedDelay = 5 * 1000L)
+    @Scheduled(fixedDelay = 10 * 1000L)
     public void broadcastNotification() {
         this.template.convertAndSend("/info", "Hi There, this notification is for all.");
     }
